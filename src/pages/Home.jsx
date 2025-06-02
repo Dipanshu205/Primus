@@ -59,7 +59,7 @@ export default function Home() {
 
       <section id="contact" className="bg-primary text-white py-16 px-4 text-center">
         <h3 className="text-3xl font-bold mb-6">Contact</h3>
-        <p>📍 1224 Security Blvd, Suite 1-of-3</p>
+        <p>📍 Delhi sector 62</p>
         <p>📞 (123)-456-7590</p>
         <p>✉️ info@primussecurity.com</p>
       </section>
