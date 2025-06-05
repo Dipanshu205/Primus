@@ -54,7 +54,7 @@ export default function Home() {
 
       <section className="py-16 px-4 text-center">
         <h3 className="text-3xl font-bold mb-6">Testimonials</h3>
-        <blockquote className="italic max-w-xl mx-auto text-lg">“Very professional team. The guards were vigilant and well-trained. Highly recommend Primus Security.”<br /><span className="block font-semibold mt-4">– John D.</span></blockquote>
+        <blockquote className="italic max-w-xl mx-auto text-lg">“Very professional team. The guards were vigilant and well-trained. Highly recommend Primus Security.”<br /><span className="block font-semibold mt-4">– Mrs. Abha </span></blockquote>
       </section>
 
       <section id="contact" className="bg-primary text-white py-16 px-4 text-center">
