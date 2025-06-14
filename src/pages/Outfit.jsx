@@ -1,33 +1,19 @@
+// src/pages/Outfits.jsx
 import React from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import BlackDummyModel from '../components/BlackDummyModel';
 
-const OutfitsPage = () => {
+export default function Outfits() {
   return (
-    <div className="min-h-screen bg-black text-white">
-      <header className="text-center py-10">
-        <h1 className="text-4xl font-bold">Outfits & Tech Advancements</h1>
-        <p className="text-gray-400 mt-2">Explore our futuristic security outfits</p>
-      </header>
-
-      <section className="w-full h-[500px]">
-        <Canvas camera={{ position: [0, 0, 4] }}>
-          <ambientLight intensity={0.5} />
-          <directionalLight position={[0, 0, 5]} />
-          <BlackDummyModel />
-          <OrbitControls />
-        </Canvas>
-      </section>
-
-      <section className="p-6 max-w-4xl mx-auto">
-        <h2 className="text-2xl font-semibold mb-4">Outfit Technology</h2>
-        <p className="text-gray-300">
-          Our outfits are designed with cutting-edge materials—lightweight, bullet-resistant, climate adaptive, and integrated with IoT sensors to ensure real-time security updates and biometric monitoring.
-        </p>
-      </section>
+    <div className="h-screen bg-black text-white">
+      <h1 className="text-center text-4xl py-6">Outfits & Tech Advancements</h1>
+      <Canvas camera={{ position: [0, 1.5, 4], fov: 50 }}>
+        <ambientLight intensity={0.5} />
+        <directionalLight position={[5, 5, 5]} intensity={1} />
+        <BlackDummyModel />
+        <OrbitControls />
+      </Canvas>
     </div>
   );
-};
-
-export default OutfitsPage;
+}
