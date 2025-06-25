@@ -13,7 +13,10 @@ export const Navbar = () => {
     
     const navLinks = (
         <>
-          <a href="#services" className="hover:underline block md:inline text-white">
+        <a href="/" className="hover:underline block md:inline text-white">
+            Home
+          </a>
+          <a href="/services" className="hover:underline block md:inline text-white">
             Services
           </a>
           <a href="/contact" className="hover:underline block md:inline text-white">
