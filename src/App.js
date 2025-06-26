@@ -7,6 +7,7 @@ import GuardDashboard from './pages/dashboard/guard/GuardDashboard';
 import Services from './pages/Services';
 import ContactComponent from './pages/Contact';
 import Outfit from './pages/Outfit';
+import AllServices from './pages/AllServices';
 
 export default function App() {
   return (
@@ -14,6 +15,11 @@ export default function App() {
       <Route path="/" element={<Home />} />
       <Route path="/services" element={<Services/>} />
       <Route path="/contact" element={<ContactComponent />} />
+      <Route path="/all-services" element={<AllServices />} />
+
+
+
+
       <Route path='/outfit' element={<Outfit />} />
       <Route path="/client/*" element={<ClientDashboard />} />
       <Route path="/admin/*" element={<AdminDashboard />} />
