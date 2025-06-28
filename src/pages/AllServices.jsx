@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import guardImage from '../assets/private-guard.jpg';
 import bodyguardImage from '../assets/bodyguard.jpg';
 import rentalImage from '../assets/rental-guard.jpg';
+import { Navbar } from './Navbar';
+import { Footer } from './Footer';
 
 const allServices = [
   {
@@ -36,7 +38,9 @@ const fadeInUp = {
 
 export default function AllServices() {
   return (
-    <div className="bg-secondary text-white min-h-screen px-6 py-12">
+    <>
+    <Navbar/>
+    <div className="mt-9 bg-secondary text-white min-h-screen px-6 py-12">
       <motion.h1
         initial="hidden"
         whileInView="visible"
@@ -87,5 +91,7 @@ export default function AllServices() {
         </a>
       </motion.div>
     </div>
+    <Footer/>
+    </>
   );
 }

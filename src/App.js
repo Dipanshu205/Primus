@@ -13,17 +13,19 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/services" element={<Services/>} />
+      {/* <Route path="/services" element={<Services/>} /> */}
       <Route path="/contact" element={<ContactComponent />} />
-      <Route path="/all-services" element={<AllServices />} />
+      <Route path="/services" element={<AllServices />} />
 
 
 
 
-      <Route path='/outfit' element={<Outfit />} />
-      <Route path="/client/*" element={<ClientDashboard />} />
-      <Route path="/admin/*" element={<AdminDashboard />} />
-      <Route path="/guard/*" element={<GuardDashboard />} />
+      {/* <Route path='/outfit' element={<Outfit />} /> */}
+
+
+      <Route path="/client" element={<ClientDashboard />} />
+      <Route path="/admin" element={<AdminDashboard />} />
+      <Route path="/guard" element={<GuardDashboard />} />
     </Routes>
   );
 }
