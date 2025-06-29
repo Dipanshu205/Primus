@@ -4,9 +4,8 @@ import Home from './pages/Home';
 import ClientDashboard from './pages/dashboard/client/ClientDashboard';
 import AdminDashboard from './pages/dashboard/admin/AdminDashboard';
 import GuardDashboard from './pages/dashboard/guard/GuardDashboard';
-import Services from './pages/Services';
+// import Services from './pages/Services';
 import ContactComponent from './pages/Contact';
-import Outfit from './pages/Outfit';
 import AllServices from './pages/AllServices';
 
 export default function App() {
